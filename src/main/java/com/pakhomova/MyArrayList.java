@@ -12,23 +12,26 @@ public class MyArrayList<T> implements ArrayList<T> {
 
 
     @Override
-    public boolean add(T t) {
+    public void add(T t) {
         try {
             T[] temp = values;
             values = (T[]) new Object[temp.length + 1];
             System.arraycopy(temp, 0, values, 0, temp.length);
             values[values.length - 1] = t;
-            return true;
         } catch (ClassCastException ex) {
             ex.getStackTrace();
         }
-        return false;
     }
 
 
     @Override
     public boolean add(int index, T element) {
-        return false;
+        if (index >= size()) {
+            return false;
+        }
+
+        values[index] = element;
+        return true;
     }
 
     @Override
@@ -38,6 +41,10 @@ public class MyArrayList<T> implements ArrayList<T> {
 
     @Override
     public boolean remove(int index) {
+        if (index >= size()) {
+            return false;
+        }
+
         try {
             T[] temp = values;
             values = (T[]) new Object[temp.length - 1];
@@ -52,9 +59,8 @@ public class MyArrayList<T> implements ArrayList<T> {
     }
 
     @Override
-    public boolean clear() {
+    public void clear() {
         values = (T[]) new Object[0];
-        return true;
     }
 
     @Override

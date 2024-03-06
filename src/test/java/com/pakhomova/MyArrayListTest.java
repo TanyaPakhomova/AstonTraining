@@ -29,6 +29,18 @@ class MyArrayListTest {
     }
 
     @Test
+    void addIndexed() {
+        MyArrayList<String> arrayList = new MyArrayList<>();
+
+        assertFalse(arrayList.add(0, "first"));
+
+        arrayList.add("first");
+        assertTrue(arrayList.add(0, "first-updated"));
+
+        assertEquals("first-updated", arrayList.get(0));
+    }
+
+    @Test
     void get() {
         MyArrayList<String> arrayList = new MyArrayList<>();
 
@@ -56,6 +68,7 @@ class MyArrayListTest {
         assertEquals("second", arrayList.get(1));
         assertEquals("third", arrayList.get(2));
 
+        assertFalse(arrayList.remove(3));
         assertTrue(arrayList.remove(2));
 
         assertEquals("first", arrayList.get(0));
@@ -78,7 +91,7 @@ class MyArrayListTest {
         assertEquals("second", arrayList.get(1));
         assertEquals("third", arrayList.get(2));
 
-        assertTrue(arrayList.clear());
+        arrayList.clear();
 
         assertThrows(IndexOutOfBoundsException.class, () -> arrayList.get(0));
         assertThrows(IndexOutOfBoundsException.class, () -> arrayList.get(1));
