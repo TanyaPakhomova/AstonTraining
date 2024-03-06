@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="§§§" />
+    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="§§§">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,21 +92,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.MyArrayListTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyArrayListTest.clear.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyArrayListTest.get.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyArrayListTest.remove.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tanya/Desktop/training/AstonTraining&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.MyArrayListTest.add.executor": "Run",
+    "Gradle.MyArrayListTest.clear.executor": "Run",
+    "Gradle.MyArrayListTest.empty.executor": "Run",
+    "Gradle.MyArrayListTest.executor": "Run",
+    "Gradle.MyArrayListTest.get.executor": "Run",
+    "Gradle.MyArrayListTest.remove.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/tanya/Desktop/training/AstonTraining",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -110,7 +118,31 @@
       <recent name="com.pakhomova" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MyArrayListTest.clear">
+  <component name="RunManager" selected="Gradle.MyArrayListTest">
+    <configuration name="MyArrayListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pakhomova.MyArrayListTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MyArrayListTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -209,6 +241,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MyArrayListTest" />
         <item itemvalue="Gradle.MyArrayListTest.clear" />
         <item itemvalue="Gradle.MyArrayListTest.remove" />
         <item itemvalue="Gradle.MyArrayListTest.get" />
@@ -274,7 +307,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

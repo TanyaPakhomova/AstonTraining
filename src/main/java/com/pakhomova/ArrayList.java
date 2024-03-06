@@ -7,6 +7,7 @@ public interface ArrayList<T> extends Iterable<T> {
     boolean remove(int index);
     boolean clear();
     void sort();
-
+    boolean isEmpty();
+    int size();
 
 }

@@ -5,25 +5,26 @@ import java.util.Iterator;
 public class MyArrayList<T> implements ArrayList<T> {
 
     T[] values;
-    public MyArrayList(){
+
+    public MyArrayList() {
         values = (T[]) new Object[0];
     }
 
 
     @Override
     public boolean add(T t) {
-        try{
+        try {
             T[] temp = values;
             values = (T[]) new Object[temp.length + 1];
             System.arraycopy(temp, 0, values, 0, temp.length);
             values[values.length - 1] = t;
             return true;
-        }
-        catch (ClassCastException ex){
+        } catch (ClassCastException ex) {
             ex.getStackTrace();
         }
         return false;
     }
+
 
     @Override
     public boolean add(int index, T element) {
@@ -37,15 +38,14 @@ public class MyArrayList<T> implements ArrayList<T> {
 
     @Override
     public boolean remove(int index) {
-        try{
-        T[] temp = values;
-        values = (T[]) new Object[temp.length -1];
-        System.arraycopy(temp, 0, values, 0, index);
-        int amountElementAfterIndex = temp.length - index - 1;
-        System.arraycopy(temp, index+1, values, index, amountElementAfterIndex);
-        return true;
-        }
-        catch (ClassCastException ex){
+        try {
+            T[] temp = values;
+            values = (T[]) new Object[temp.length - 1];
+            System.arraycopy(temp, 0, values, 0, index);
+            int amountElementAfterIndex = temp.length - index - 1;
+            System.arraycopy(temp, index + 1, values, index, amountElementAfterIndex);
+            return true;
+        } catch (ClassCastException ex) {
             ex.printStackTrace();
         }
         return false;
@@ -53,21 +53,23 @@ public class MyArrayList<T> implements ArrayList<T> {
 
     @Override
     public boolean clear() {
-        try {
-            for (int i = 0; i < values.length; i++) {
-                values[i] = null;
-            }
-            return true;
-        }
-        catch (NullPointerException ex){
-            ex.printStackTrace();
-            return false;
-    }
+        values = (T[]) new Object[0];
+        return true;
     }
 
     @Override
     public void sort() {
 
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    @Override
+    public int size() {
+        return values.length;
     }
 
     @Override
