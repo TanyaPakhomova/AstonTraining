@@ -7,14 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyArrayListTest {
 
     @Test
-    void empty() {
+    void testEmpty() {
         MyArrayList<String> arrayList = new MyArrayList<>();
         assertEquals(0, arrayList.size());
         assertTrue(arrayList.isEmpty());
     }
 
     @Test
-    void add() {
+    void testAdd() {
         MyArrayList<String> arrayList = new MyArrayList<>();
 
         arrayList.add("first");
@@ -29,7 +29,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void addIndexed() {
+    void testAddIndexed() {
         MyArrayList<String> arrayList = new MyArrayList<>();
 
         assertFalse(arrayList.add(0, "first"));
@@ -41,7 +41,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void get() {
+    void testGet() {
         MyArrayList<String> arrayList = new MyArrayList<>();
 
         arrayList.add("first");
@@ -58,7 +58,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         MyArrayList<String> arrayList = new MyArrayList<>();
         arrayList.add("first");
         arrayList.add("second");
@@ -81,7 +81,7 @@ class MyArrayListTest {
     }
 
     @Test
-    void clear() {
+    void testClear() {
         MyArrayList<String> arrayList = new MyArrayList<>();
         arrayList.add("first");
         arrayList.add("second");
@@ -101,4 +101,31 @@ class MyArrayListTest {
         assertTrue(arrayList.isEmpty());
     }
 
+    @Test
+    public void testSort() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        list.add(3);
+        list.add(1);
+        list.add(4);
+        list.add(2);
+
+        list.sort();
+
+        assertEquals(1, list.get(0));
+        assertEquals(2, list.get(1));
+        assertEquals(3, list.get(2));
+        assertEquals(4, list.get(3));
+    }
+
+    @Test
+    public void testSet() {
+        MyArrayList<String> list = new MyArrayList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+
+        list.set("four", 1);
+
+        assertEquals("four", list.get(1));
+    }
 }

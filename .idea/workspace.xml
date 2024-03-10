@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="Improve tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/QuickSortTest.java" afterDir="false" />
+    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="Start working on quicksort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pakhomova/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/QuickSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +104,14 @@
     "Gradle.MyArrayListTest.executor": "Run",
     "Gradle.MyArrayListTest.get.executor": "Run",
     "Gradle.MyArrayListTest.remove.executor": "Run",
+    "Gradle.MyArrayListTest.testSet.executor": "Run",
+    "Gradle.MyArrayListTest.testSort.executor": "Run",
+    "Gradle.QuickSortTest.integerSort.executor": "Run",
+    "Gradle.QuickSortTest.sort.executor": "Run",
+    "Gradle.QuickSortTest.stringSort.executor": "Run",
+    "Gradle.QuickSortTest.testSortWithCustomComparator.executor": "Run",
+    "Gradle.QuickSortTest.testSortWithString.executor": "Run",
+    "Gradle.QuickSortTest.testWithSingleElement.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -121,8 +130,8 @@
       <recent name="com.pakhomova" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MyArrayListTest">
-    <configuration name="MyArrayListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MyArrayListTest.testSet">
+    <configuration name="MyArrayListTest.testSet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pakhomova.MyArrayListTest&quot;" />
+            <option value="&quot;com.pakhomova.MyArrayListTest.testSet&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +155,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyArrayListTest.addIndexed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MyArrayListTest.testSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pakhomova.MyArrayListTest.addIndexed&quot;" />
+            <option value="&quot;com.pakhomova.MyArrayListTest.testSort&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,7 +179,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyArrayListTest.clear" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuickSortTest.testSortWithCustomComparator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -183,7 +192,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pakhomova.MyArrayListTest.clear&quot;" />
+            <option value="&quot;com.pakhomova.QuickSortTest.testSortWithCustomComparator&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,7 +203,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyArrayListTest.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuickSortTest.testSortWithString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,7 +216,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pakhomova.MyArrayListTest.get&quot;" />
+            <option value="&quot;com.pakhomova.QuickSortTest.testSortWithString&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,7 +227,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyArrayListTest.remove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuickSortTest.testWithSingleElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -231,7 +240,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pakhomova.MyArrayListTest.remove&quot;" />
+            <option value="&quot;com.pakhomova.QuickSortTest.testWithSingleElement&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MyArrayListTest" />
-        <item itemvalue="Gradle.MyArrayListTest.get" />
-        <item itemvalue="Gradle.MyArrayListTest.addIndexed" />
-        <item itemvalue="Gradle.MyArrayListTest.clear" />
-        <item itemvalue="Gradle.MyArrayListTest.remove" />
+        <item itemvalue="Gradle.MyArrayListTest.testSet" />
+        <item itemvalue="Gradle.MyArrayListTest.testSort" />
+        <item itemvalue="Gradle.QuickSortTest.testSortWithCustomComparator" />
+        <item itemvalue="Gradle.QuickSortTest.testSortWithString" />
+        <item itemvalue="Gradle.QuickSortTest.testWithSingleElement" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709749259875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Start working on quicksort">
+      <option name="closed" value="true" />
+      <created>1709750657216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709750657216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,6 +357,7 @@
     <MESSAGE value="wip" />
     <MESSAGE value="Add basic data classes" />
     <MESSAGE value="Improve tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve tests" />
+    <MESSAGE value="Start working on quicksort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start working on quicksort" />
   </component>
 </project>
