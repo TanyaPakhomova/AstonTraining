@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="Start working on quicksort">
+    <list default="true" id="6162c9d4-e4ae-4a63-85bb-58c14280de0f" name="Changes" comment="Add QuickSort and java doc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pakhomova/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pakhomova/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/MyArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pakhomova/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pakhomova/QuickSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709750657216</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add QuickSort and java doc.">
+      <option name="closed" value="true" />
+      <created>1710082248853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710082248853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,6 +361,9 @@
     <MESSAGE value="Add basic data classes" />
     <MESSAGE value="Improve tests" />
     <MESSAGE value="Start working on quicksort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start working on quicksort" />
+    <MESSAGE value="Add QuickSort and java doc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add QuickSort and java doc." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
